@@ -1,0 +1,27 @@
+body {
+  @extend %roboto-regular;
+  @include text(16px, 1.3, $primaryColor);
+}
+
+.container {
+ max-width: 1140px;
+ margin: 0 auto;
+ padding: 0 10px;
+}
+
+.title {
+ @extend %roboto-bold;
+ @include text(36px, 1.3, $secondaryColor);
+}
+
+.btn {
+ @include text(18px, 1.1, $primaryColor);
+ background-color: $accentColor;
+ padding: 19px 54px;
+ border-radius: 30px;
+ transition: all 0.5s;
+  &:hover {
+   background-color: $primaryColor;
+   color: $accentColor;
+  }
+}

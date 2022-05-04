@@ -1,0 +1,21 @@
+.menu {
+ &__list {
+  display: flex;
+  justify-content: center;
+  border: 1px solid $primaryColor;
+  border-left: none;
+  border-right: none;
+  padding: 25px 0;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 120px;
+  }
+ }
+ &__link {
+  transition: text-decoration 5s;
+   &:hover {
+    text-decoration: underline;
+   }  
+ }
+}
