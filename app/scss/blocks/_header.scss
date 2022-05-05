@@ -1,6 +1,5 @@
 .header {
  @include background(url("../../images/header-bg.jpg"));
- height: 100vh;
   &__top {
    display: flex;
    align-items: center;
@@ -27,19 +26,27 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   height: calc(100vh - 160px);
+   height: calc(100vh - 165px);
    padding: 49px 0 74px;
   }
   &__content-title {
    @include text(90px, 1.3, $secondaryColor);
    @extend %pt-serif-bold;
    margin: 0 auto;
+   margin-bottom: auto;
   }
   &__content-text {
    @include text(20px, 1.4, $secondaryColor);
    @extend %roboto-bold;
    max-width: 420px;
-   margin-top: auto;
    margin-bottom: 18px;
+  }
+  &__content-btn {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   text-align: center;
+   padding-bottom: 14px;
   }
 }

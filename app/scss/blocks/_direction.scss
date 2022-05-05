@@ -1,0 +1,20 @@
+.direction {
+ padding: 100px 0;
+ &__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+ }
+ &__item {
+  max-width: 256px;
+  width: 100%;
+  
+ }
+ &__name {
+  color: $secondaryColor;
+  @extend %roboto-regular;
+  padding: 12px 19px 19px;
+  border: 1px solid #D9D9DE;
+  border-top: none;
+ }
+}
