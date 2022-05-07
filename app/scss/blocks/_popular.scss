@@ -1,0 +1,42 @@
+.popular {
+ padding: 100px 0 80px;
+ border: 1px solid #D9D9DE;
+  &__title {
+   margin-bottom: 40px;
+  }
+  &__inner {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 256px);
+   grid-gap: 32px;
+  }
+  &__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 16px 24px 19px;
+  }
+  &__item-big {
+   grid-area: 1/3/3/5;
+  }
+  &__item-travel {
+   grid-area: 3/1/5/3;
+  }
+  &__item-title {
+   @include text(18px, 1.3, $primaryColor);
+   margin-bottom: 15px;
+    &--big {
+     font-size: 24px;
+    }
+  }
+  &__country,
+  &__time {
+   margin-bottom: 15px;
+  }
+  &__price {
+   margin-top: auto;
+  }
+} 

@@ -12,6 +12,7 @@ body {
 .title {
  @extend %roboto-bold;
  @include text(36px, 1.3, $secondaryColor);
+ text-align: center;
 }
 
 .btn {
