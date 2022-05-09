@@ -1,0 +1,23 @@
+.gallery {
+ background-color: $accentColor;
+ padding: 50px 0 100px;
+ &__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-right: 160px;
+ }
+  &__title {
+   color: $primaryColor;
+   text-align: left;
+  }
+  &__link {
+   text-decoration: underline;
+  }
+  &__item-inner {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 32px;
+  }
+}

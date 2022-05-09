@@ -1,0 +1,33 @@
+.footer {
+ background-color: $secondaryColor;
+ padding: 75px 0;
+ &__logo-image {
+  margin: 0 auto 70px;
+ }
+ &__box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  max-width: 830px;
+  margin: 0 auto;
+ }
+ &__info {
+  max-width: 225px;
+  width: 100%;
+ } 
+ &__address {
+  max-width: 165px;
+  width: 100%;
+ }
+ &__contacts {
+  max-width: 209px;
+  width: 100%;
+ }
+ &__box-title {
+  margin-bottom: 7px;
+  font-weight: 500;
+ }
+ &__contacts-mail {
+  display: block;
+ }
+}
