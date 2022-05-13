@@ -20,9 +20,10 @@
    text-decoration: underline;
   }
   &__popup {
-   position: relative;
+   
   }
   &__popup-link {
+   position: relative;
    &::before {
     position: absolute;
     content: "";
@@ -44,5 +45,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
    }
+  } 
+  &__popup-image {
+   height: 100%;
   }
 }
